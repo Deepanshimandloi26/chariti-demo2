@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CMerriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic%7CJost%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CRoboto%3A400&amp;subset=devanagari%2Clatin%2Clatin-ext%2Ccyrillic%2Ccyrillic-ext%2Cvietnamese&amp;display=swap" media="all" onload="this.media='all'">
+    <link rel="preload" data-rocket-preload="" as="style" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CMerriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic%7CJost%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2Citalic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CRoboto%3A400&amp;subset=devanagari%2Clatin%2Clatin-ext%2Ccyrillic%2Ccyrillic-ext%2Cvietnamese&amp;display=swap">
+  </head>
+  <body> 
+    <header class="header" id="header">
+      <section>
+        <nav class="navbar">
+          <div class="logo">
+            <img src="img/charity.png" alt="Logo">
+          </div>
+          <ion-icon name="menu-outline" class="menu-icon" onclick="toggleMenu()"></ion-icon>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Our Causes</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Features</a></li>
+            <li>
+              <ion-icon name="search-outline" class="icon"></ion-icon>
+            </li>
+          </ul>
+          <div class="nav-icons">
+            <button class="login-btn">DONATE</button>
+            <button class="charity-btn">VOLUNTEER</button>
+          </div>
+        </nav>
+      </section>
+    </header>  
+  
+    <section>
+      <div class="slider-section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/main1.jpg" alt="Slide 1">
+              
+            </div>
+            <div class="swiper-slide">
+              <img src="img/p1.jpg" alt="Slide 2">
+              
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  
+  
+
+  <section>
+    <div class="below-cards">
+      <div class="card card1">
+        <h3>We’ve been tackling poverty in communities to build better lives</h3>
+        <a href="#">Learn More →</a>
+      </div>
+      <div class="card card2">
+        <h3>The great journey to end poverty for good begins with a child</h3>
+        <a href="#">Donate Now →</a>
+      </div>
+      <div class="card card1">
+        <h3>Join our community to help bring clean and safe drinking water</h3>
+        <a href="#">Become A Volunteer →</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-causes">
+      <div class="content">
+        <div class="icon-causes">
+          <img src="img/causes.png" alt="Icon">
+        </div>
+        <h4>Our Causes</h4>
+        <a href="#" class="view-link">View All Causes →</a>
+      </div>
+    </div>
+  </section>
+  
+  
+<section class="donation-section">
+  <div class="donation-card">
+    <a href="cause.html"> <img id='show_bg_1'></a>
+      <div class="donation-content">
+          <div class="donation-title">Providing access to safe water, sanitation, and hygiene</div>
+          <div class="donation-details">$30,980.00 <div class="heart-icon">&#10084;</div></div>
+          <div class="progress-container">
+            
+              <div class="progress-bar" id="myProgress">
+                  <span style="width: 103%;" id="myBar"></span>
+                 
+              </div>
+              <div class="goal">
+              <div>103% Donated</div>
+              <div class="donation-details"> Goal: $30,000.00</div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="donation-card">
+    <a href="cause.html">  <img id='show_bg_2'></a>
+      <div class="donation-content">
+          <div class="donation-title">Second Hand Goods Donation</div>
+          <div class="donation-details">$27,105.00   <div class="heart-icon">&#10084;</div></div>
+          <div class="progress-container">
+          
+              <div class="progress-bar">        <span style="width: 100%;"></span>
+             
+              </div>
+              <div class="goal">
+              <div>100% Donated</div>
+              <div class="donation-details"> Goal: $27,000.00</div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="donation-card">
+    <a href="cause.html">  <img id='show_bg_3'></a>
+      <div class="donation-content">
+          <div class="donation-title">Education Needed</div>
+          <div class="donation-details">$12,010.00   <div class="heart-icon">&#10084;</div></div>
+          <div class="progress-container">
+          
+              <div class="progress-bar">    
+                
+                  <span style="width: 40%;"></span>
+              
+              </div>
+              <div class="goal">
+              <div>40% Donated</div>
+              <div class="donation-details"> Goal: $30,000.00</div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="donation-card" >
+    <a href="cause.html"> <img id='show_bg_4' ></a>
+      <div class="donation-content">
+          <div class="donation-title">Save Child Africa</div>
+          <div class="donation-details">$102,010.00   <div class="heart-icon">&#10084;</div> </div>
+          <div class="progress-container">
+          
+              <div class="progress-bar">
+                  <span style="width: 51%;"></span>
+              
+              </div>
+              <div class="goal">
+              <div>51% Donated</div>
+              <div class="donation-details"> Goal: $200,000.00</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="how-we-work-section">
+  <div class="container">
+    <div class="how-we-work">
+   
+      <div class="images">
+        <img src="img/work.png" alt="How We Work Image">
+      </div>
+
+      
+      <div class="content">
+        <h2>How we work</h2>
+        <ul>
+          <li>
+            <div class="icon-container">
+              <ion-icon name="home-outline"></ion-icon>
+            </div>
+            <div class="text">
+              <h4>Community centers</h4>
+              <p>Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same.</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon-container">
+              <ion-icon name="server-outline"></ion-icon>
+            </div>
+            <div class="text">
+              <h4>Data-driven approach</h4>
+              <p>Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same.</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon-container">
+              <ion-icon name="happy-outline"></ion-icon>
+            </div>
+            <div class="text">
+              <h4>Focused support</h4>
+              <p>Charity law within the UK varies among England and Wales, Scotland and Northern Ireland, but the fundamental principles are the same.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-counter">
+  <div class="container stats">
+    <div class="stat">
+      <h3 id="counter1">0</h3>
+      <p>Monthly Visitors</p>
+    </div>
+    <div class="stat">
+      <h3 id="counter2">0</h3>
+      <p>Volunteers Connected</p>
+    </div>
+    <div class="stat">
+      <h3 id="counter3">0</h3>
+      <p>Countries Worldwide</p>
+    </div>
+    <div class="stat">
+      <h3 id="counter4">0</h3>
+      <p>Volunteers Needed</p>
+    </div>
+  </div>
+</section>
+<section class="section-yt">
+  <div class="content-yt">
+    <h3>The Story of Us</h3>
+    <h2>How did this come to our attention?</h2>
+    <p>
+      The unincorporated association is the most common form of organization within
+      the voluntary sector in England and Wales.
+    </p>
+    <button class="btn">
+      <a href="#" download>
+        <ion-icon name="document-outline" class="file"></ion-icon>Download PDF
+      </a>
+    </button>
+  </div>
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/QFy8iPBYDLU?si=D7ETbDMkUIc_IyGQ"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
